@@ -27,9 +27,9 @@ struct WellView: View {
             Text(displayText).font(.caption)
         })
         .alert("Details", isPresented: $isTapped) {
-            Button("OK", role: .cancel) { }
+            Button("Close", role: .cancel) { }
         } message: {
-            Text("Coordinate: \(currentWell.id)\n") +
+            Text("Coordinate: \(currentWell.coordinate)\n") +
             Text("Contents: \(currentWell.type.description)")
         }.onTapGesture {
             isTapped = true

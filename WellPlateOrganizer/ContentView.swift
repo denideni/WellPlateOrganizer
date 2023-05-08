@@ -21,7 +21,7 @@ struct ContentView: View {
                 Text("Get started by importing or opening a file from your device. To open a file from your device press the share button while you are viewing your csv file.")
             } else {
                 Picker("Filter", selection: $activeFilter) {
-                    Text("Select Filter").tag(Optional<WellTypes>(nil))
+                    Text("All").tag(Optional<WellTypes>(nil))
                     ForEach(wellPlateReader.allSamples, id: \.description) { item in
                         Text(item.description).tag(Optional<WellTypes>(item))
                     }
@@ -51,6 +51,7 @@ struct ContentView: View {
                 }
                 Button(action: {
                     wellPlateReader.clearPlates()
+                    activeFilter = nil
                 }, label: {
                     Text("Clear").foregroundColor(.red)
                 }).padding([.top], 8)

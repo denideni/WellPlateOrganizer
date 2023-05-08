@@ -67,14 +67,16 @@ struct WellModel: Identifiable, Comparable {
     }
     
     static func == (lhs: WellModel, rhs: WellModel) -> Bool {
-        lhs.id.compare(rhs.id, options: .numeric) == .orderedSame
+        lhs.id.compare(rhs.id, options: .numeric) == .orderedSame && lhs.type == rhs.type
     }
     
-    var id: String // location of the circle on the plate
+    var id: String
+    var coordinate: String // location of the circle on the plate
     var type: WellTypes
     
     init(coordinate: String, type: WellTypes) {
-        self.id = coordinate.uppercased()
+        self.id = coordinate.uppercased() + type.description
+        self.coordinate = coordinate.uppercased()
         self.type = type
     }
 }

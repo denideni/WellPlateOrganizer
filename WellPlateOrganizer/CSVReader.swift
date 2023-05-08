@@ -13,8 +13,8 @@ class CSVReader: ObservableObject {
     private var rows: [String] = []
     
     func clearPlates() {
-        wellPlate = []
         allSamples = []
+        wellPlate = []
     }
     
     func readFromURL(filePath: URL) {
@@ -54,11 +54,12 @@ class CSVReader: ObservableObject {
     }
     
     func parseFile() {
-        // reset the all samples array
-        allSamples = []
+        // reset before parsing new data
+        clearPlates()
+        
         var flatListWells: [WellModel] = [WellModel]()
         
-        for row in rows {
+        for row in rows where !row.isEmpty {
             let columns = row.components(separatedBy: ",")
             let coordinate = columns[0]
             let sampleId = columns[1].trimmingCharacters(in: .whitespacesAndNewlines)
