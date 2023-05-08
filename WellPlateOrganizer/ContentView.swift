@@ -30,7 +30,7 @@ struct ContentView: View {
                         }
                     }
                 }
-                ForEach(0..<wellPlateReader.wellPlate.count) { rowNumber in
+                ForEach(0..<wellPlateReader.wellPlate.endIndex, id: \.self) { rowNumber in
                     GridRow {
                         Text(rowTitles[rowNumber])
                         ForEach(wellPlateReader.wellPlate[rowNumber]) { elem in

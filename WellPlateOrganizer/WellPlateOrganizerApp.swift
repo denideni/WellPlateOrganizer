@@ -12,7 +12,9 @@ struct WellPlateOrganizerApp: App {
     @StateObject var wellPlateReader = CSVReader()
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(wellPlateReader)
+            ContentView().environmentObject(wellPlateReader).onOpenURL { url in
+                wellPlateReader.readFromURL(filePath: url)
+            }
         }
     }
 }

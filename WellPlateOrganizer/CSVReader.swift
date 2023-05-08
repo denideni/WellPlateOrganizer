@@ -10,22 +10,45 @@ import Foundation
 class CSVReader: ObservableObject {
     @Published var wellPlate: [[WellModel]] = []
     @Published var allSamples: [WellTypes] = []
-    init() {
-        guard let filepath = Bundle.main.path(forResource: "plate_layout", ofType: "csv") else {
-            return
-        }
+    private var rows: [String] = []
+    
+    func readFromURL(filePath: URL) {
         var data = ""
         do {
-            data = try String(contentsOfFile: filepath)
+            let fileData = try Data(contentsOf: filePath)
+            if let text = String(data: fileData, encoding: .utf8) {
+                data = text
+            }
+            
         } catch {
             print(error)
             return
         }
-        var rows = data.components(separatedBy: "\n")
+        rows = data.components(separatedBy: "\n")
         
         // first row is dedicated for col headers, so get rid
         rows.removeFirst()
         
+        parseFile()
+    }
+    
+    func readFromPath(filePath: String) {
+        var data = ""
+        do {
+            data = try String(contentsOfFile: filePath)
+        } catch {
+            print(error)
+            return
+        }
+        rows = data.components(separatedBy: "\n")
+        
+        // first row is dedicated for col headers, so get rid
+        rows.removeFirst()
+        
+        parseFile()
+    }
+    
+    func parseFile() {
         var flatListWells: [WellModel] = [WellModel]()
         
         for row in rows {
@@ -53,5 +76,12 @@ class CSVReader: ObservableObject {
                 currentRow = []
             }
         }
+    }
+    
+    init() {
+        guard let filePath = Bundle.main.path(forResource: "plate_layout", ofType: "csv") else {
+            return
+        }
+        readFromPath(filePath: filePath)
     }
 }
