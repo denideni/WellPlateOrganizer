@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import UniformTypeIdentifiers
 
 struct ContentView: View {
     @EnvironmentObject var wellPlateReader: CSVReader
     let rowTitles = ["A", "B", "C", "D", "E", "F", "G", "H"]
     @State var activeFilter: WellTypes?
+    @State var isImporting: Bool = false
     
     var body: some View {
         VStack {
@@ -41,6 +43,20 @@ struct ContentView: View {
                             }
                         }
                     }
+                }
+            }
+            Button {
+                isImporting.toggle()
+            } label: {
+                Text("Import File")
+            }.fileImporter(isPresented: $isImporting, allowedContentTypes: [UTType.commaSeparatedText]) { result in
+                
+                switch result {
+                case .success(let fileURL):
+                    wellPlateReader.readFromURL(filePath: fileURL)
+                    print(fileURL)
+                case .failure(let error):
+                    print(error)
                 }
             }
         }

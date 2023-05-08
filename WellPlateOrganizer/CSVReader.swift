@@ -79,9 +79,9 @@ class CSVReader: ObservableObject {
     }
     
     init() {
-        guard let filePath = Bundle.main.path(forResource: "plate_layout", ofType: "csv") else {
-            return
-        }
-        readFromPath(filePath: filePath)
+//        guard let filePath = Bundle.main.path(forResource: "plate_layout", ofType: "csv") else {
+//            return
+//        }
+//        readFromPath(filePath: filePath)
     }
 }
