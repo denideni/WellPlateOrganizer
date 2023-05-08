@@ -16,34 +16,44 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Picker("Filter", selection: $activeFilter) {
-                Text("Select Filter").tag(Optional<WellTypes>(nil))
-                ForEach(wellPlateReader.allSamples, id: \.description) { item in
-                    Text(item.description).tag(Optional<WellTypes>(item))
-                }
-            }
-            Grid(horizontalSpacing: 5, verticalSpacing: 5) {
-                GridRow {
-                    ForEach(0..<13) { colNumber in
-                        if colNumber == 0 {
-                            Color.clear.frame(maxHeight: 1)
-                        } else {
-                            Text("\(colNumber)")
-                        }
+            if wellPlateReader.wellPlate.isEmpty {
+                Text("Welcome to Well Plate Organizer!").font(.title3).bold().padding()
+                Text("Get started by importing or opening a file from your device. To open a file from your device press the share button while you are viewing your csv file.")
+            } else {
+                Picker("Filter", selection: $activeFilter) {
+                    Text("Select Filter").tag(Optional<WellTypes>(nil))
+                    ForEach(wellPlateReader.allSamples, id: \.description) { item in
+                        Text(item.description).tag(Optional<WellTypes>(item))
                     }
                 }
-                ForEach(0..<wellPlateReader.wellPlate.endIndex, id: \.self) { rowNumber in
+                Grid(horizontalSpacing: 5, verticalSpacing: 5) {
                     GridRow {
-                        Text(rowTitles[rowNumber])
-                        ForEach(wellPlateReader.wellPlate[rowNumber]) { elem in
-                            if elem.type == activeFilter || activeFilter == nil {
-                                WellView(currentWell: elem)
+                        ForEach(0..<13) { colNumber in
+                            if colNumber == 0 {
+                                Color.clear.frame(maxHeight: 1)
                             } else {
-                                Circle().foregroundColor(.gray)
+                                Text("\(colNumber)")
+                            }
+                        }
+                    }
+                    ForEach(0..<wellPlateReader.wellPlate.endIndex, id: \.self) { rowNumber in
+                        GridRow {
+                            Text(rowTitles[rowNumber])
+                            ForEach(wellPlateReader.wellPlate[rowNumber]) { elem in
+                                if elem.type == activeFilter || activeFilter == nil {
+                                    WellView(currentWell: elem)
+                                } else {
+                                    Circle().foregroundColor(.gray)
+                                }
                             }
                         }
                     }
                 }
+                Button(action: {
+                    wellPlateReader.clearPlates()
+                }, label: {
+                    Text("Clear").foregroundColor(.red)
+                }).padding([.top], 8)
             }
             Button {
                 isImporting.toggle()
@@ -58,7 +68,7 @@ struct ContentView: View {
                 case .failure(let error):
                     print(error)
                 }
-            }
+            }.padding([.top], 8)
         }
         .padding()
     }
