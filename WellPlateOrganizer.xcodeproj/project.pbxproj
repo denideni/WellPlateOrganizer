@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E76829F2A081CC60051B048 /* BrieflyBioAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76829E2A081CC60051B048 /* BrieflyBioAssignmentApp.swift */; };
+		6E76829F2A081CC60051B048 /* WellPlateOrganizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E76829E2A081CC60051B048 /* WellPlateOrganizerApp.swift */; };
 		6E7682A12A081CC60051B048 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7682A02A081CC60051B048 /* ContentView.swift */; };
 		6E7682A32A081CC80051B048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E7682A22A081CC70051B048 /* Assets.xcassets */; };
 		6E7682A62A081CC80051B048 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E7682A52A081CC80051B048 /* Preview Assets.xcassets */; };
-		6E7682B02A081CC80051B048 /* BrieflyBioAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7682AF2A081CC80051B048 /* BrieflyBioAssignmentTests.swift */; };
-		6E7682BA2A081CC80051B048 /* BrieflyBioAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7682B92A081CC80051B048 /* BrieflyBioAssignmentUITests.swift */; };
-		6E7682BC2A081CC80051B048 /* BrieflyBioAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7682BB2A081CC80051B048 /* BrieflyBioAssignmentUITestsLaunchTests.swift */; };
+		6E7682B02A081CC80051B048 /* WellPlateOrganizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7682AF2A081CC80051B048 /* WellPlateOrganizerTests.swift */; };
+		6E7682BA2A081CC80051B048 /* WellPlateOrganizerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7682B92A081CC80051B048 /* WellPlateOrganizerUITests.swift */; };
+		6E7682BC2A081CC80051B048 /* WellPlateOrganizerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7682BB2A081CC80051B048 /* WellPlateOrganizerUITestsLaunchTests.swift */; };
+		6E7682C92A081E1A0051B048 /* WellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7682C82A081E1A0051B048 /* WellModel.swift */; };
+		6E7682CB2A0820170051B048 /* WellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7682CA2A0820170051B048 /* WellView.swift */; };
+		6E7682CD2A0822D00051B048 /* plate_layout.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6E7682CC2A0822D00051B048 /* plate_layout.csv */; };
+		6E7682CF2A0822FB0051B048 /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7682CE2A0822FB0051B048 /* CSVReader.swift */; };
+		6E7682D12A08371F0051B048 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7682D02A08371F0051B048 /* ColorExtension.swift */; };
+		6E7682D32A083F970051B048 /* FilterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7682D22A083F970051B048 /* FilterManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +40,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6E76829B2A081CC60051B048 /* BrieflyBioAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrieflyBioAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E76829E2A081CC60051B048 /* BrieflyBioAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrieflyBioAssignmentApp.swift; sourceTree = "<group>"; };
+		6E76829B2A081CC60051B048 /* WellPlateOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WellPlateOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E76829E2A081CC60051B048 /* WellPlateOrganizerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellPlateOrganizerApp.swift; sourceTree = "<group>"; };
 		6E7682A02A081CC60051B048 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6E7682A22A081CC70051B048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E7682A52A081CC80051B048 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		6E7682AB2A081CC80051B048 /* BrieflyBioAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrieflyBioAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E7682AF2A081CC80051B048 /* BrieflyBioAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrieflyBioAssignmentTests.swift; sourceTree = "<group>"; };
-		6E7682B52A081CC80051B048 /* BrieflyBioAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrieflyBioAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E7682B92A081CC80051B048 /* BrieflyBioAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrieflyBioAssignmentUITests.swift; sourceTree = "<group>"; };
-		6E7682BB2A081CC80051B048 /* BrieflyBioAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrieflyBioAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6E7682AB2A081CC80051B048 /* WellPlateOrganizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WellPlateOrganizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7682AF2A081CC80051B048 /* WellPlateOrganizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellPlateOrganizerTests.swift; sourceTree = "<group>"; };
+		6E7682B52A081CC80051B048 /* WellPlateOrganizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WellPlateOrganizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7682B92A081CC80051B048 /* WellPlateOrganizerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellPlateOrganizerUITests.swift; sourceTree = "<group>"; };
+		6E7682BB2A081CC80051B048 /* WellPlateOrganizerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellPlateOrganizerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6E7682C82A081E1A0051B048 /* WellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellModel.swift; sourceTree = "<group>"; };
+		6E7682CA2A0820170051B048 /* WellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellView.swift; sourceTree = "<group>"; };
+		6E7682CC2A0822D00051B048 /* plate_layout.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plate_layout.csv; sourceTree = "<group>"; };
+		6E7682CE2A0822FB0051B048 /* CSVReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVReader.swift; sourceTree = "<group>"; };
+		6E7682D02A08371F0051B048 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		6E7682D22A083F970051B048 /* FilterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterManager.swift; sourceTree = "<group>"; };
+		6E7682D42A08A56A0051B048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +87,9 @@
 		6E7682922A081CC60051B048 = {
 			isa = PBXGroup;
 			children = (
-				6E76829D2A081CC60051B048 /* BrieflyBioAssignment */,
-				6E7682AE2A081CC80051B048 /* BrieflyBioAssignmentTests */,
-				6E7682B82A081CC80051B048 /* BrieflyBioAssignmentUITests */,
+				6E76829D2A081CC60051B048 /* WellPlateOrganizer */,
+				6E7682AE2A081CC80051B048 /* WellPlateOrganizerTests */,
+				6E7682B82A081CC80051B048 /* WellPlateOrganizerUITests */,
 				6E76829C2A081CC60051B048 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,22 +97,29 @@
 		6E76829C2A081CC60051B048 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E76829B2A081CC60051B048 /* BrieflyBioAssignment.app */,
-				6E7682AB2A081CC80051B048 /* BrieflyBioAssignmentTests.xctest */,
-				6E7682B52A081CC80051B048 /* BrieflyBioAssignmentUITests.xctest */,
+				6E76829B2A081CC60051B048 /* WellPlateOrganizer.app */,
+				6E7682AB2A081CC80051B048 /* WellPlateOrganizerTests.xctest */,
+				6E7682B52A081CC80051B048 /* WellPlateOrganizerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6E76829D2A081CC60051B048 /* BrieflyBioAssignment */ = {
+		6E76829D2A081CC60051B048 /* WellPlateOrganizer */ = {
 			isa = PBXGroup;
 			children = (
-				6E76829E2A081CC60051B048 /* BrieflyBioAssignmentApp.swift */,
+				6E7682D42A08A56A0051B048 /* Info.plist */,
+				6E76829E2A081CC60051B048 /* WellPlateOrganizerApp.swift */,
+				6E7682C82A081E1A0051B048 /* WellModel.swift */,
+				6E7682CA2A0820170051B048 /* WellView.swift */,
+				6E7682CC2A0822D00051B048 /* plate_layout.csv */,
 				6E7682A02A081CC60051B048 /* ContentView.swift */,
 				6E7682A22A081CC70051B048 /* Assets.xcassets */,
 				6E7682A42A081CC80051B048 /* Preview Content */,
+				6E7682CE2A0822FB0051B048 /* CSVReader.swift */,
+				6E7682D02A08371F0051B048 /* ColorExtension.swift */,
+				6E7682D22A083F970051B048 /* FilterManager.swift */,
 			);
-			path = BrieflyBioAssignment;
+			path = WellPlateOrganizer;
 			sourceTree = "<group>";
 		};
 		6E7682A42A081CC80051B048 /* Preview Content */ = {
@@ -110,29 +130,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		6E7682AE2A081CC80051B048 /* BrieflyBioAssignmentTests */ = {
+		6E7682AE2A081CC80051B048 /* WellPlateOrganizerTests */ = {
 			isa = PBXGroup;
 			children = (
-				6E7682AF2A081CC80051B048 /* BrieflyBioAssignmentTests.swift */,
+				6E7682AF2A081CC80051B048 /* WellPlateOrganizerTests.swift */,
 			);
-			path = BrieflyBioAssignmentTests;
+			path = WellPlateOrganizerTests;
 			sourceTree = "<group>";
 		};
-		6E7682B82A081CC80051B048 /* BrieflyBioAssignmentUITests */ = {
+		6E7682B82A081CC80051B048 /* WellPlateOrganizerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				6E7682B92A081CC80051B048 /* BrieflyBioAssignmentUITests.swift */,
-				6E7682BB2A081CC80051B048 /* BrieflyBioAssignmentUITestsLaunchTests.swift */,
+				6E7682B92A081CC80051B048 /* WellPlateOrganizerUITests.swift */,
+				6E7682BB2A081CC80051B048 /* WellPlateOrganizerUITestsLaunchTests.swift */,
 			);
-			path = BrieflyBioAssignmentUITests;
+			path = WellPlateOrganizerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6E76829A2A081CC60051B048 /* BrieflyBioAssignment */ = {
+		6E76829A2A081CC60051B048 /* WellPlateOrganizer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E7682BF2A081CC80051B048 /* Build configuration list for PBXNativeTarget "BrieflyBioAssignment" */;
+			buildConfigurationList = 6E7682BF2A081CC80051B048 /* Build configuration list for PBXNativeTarget "WellPlateOrganizer" */;
 			buildPhases = (
 				6E7682972A081CC60051B048 /* Sources */,
 				6E7682982A081CC60051B048 /* Frameworks */,
@@ -142,14 +162,14 @@
 			);
 			dependencies = (
 			);
-			name = BrieflyBioAssignment;
+			name = WellPlateOrganizer;
 			productName = BrieflyBioAssignment;
-			productReference = 6E76829B2A081CC60051B048 /* BrieflyBioAssignment.app */;
+			productReference = 6E76829B2A081CC60051B048 /* WellPlateOrganizer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6E7682AA2A081CC80051B048 /* BrieflyBioAssignmentTests */ = {
+		6E7682AA2A081CC80051B048 /* WellPlateOrganizerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E7682C22A081CC80051B048 /* Build configuration list for PBXNativeTarget "BrieflyBioAssignmentTests" */;
+			buildConfigurationList = 6E7682C22A081CC80051B048 /* Build configuration list for PBXNativeTarget "WellPlateOrganizerTests" */;
 			buildPhases = (
 				6E7682A72A081CC80051B048 /* Sources */,
 				6E7682A82A081CC80051B048 /* Frameworks */,
@@ -160,14 +180,14 @@
 			dependencies = (
 				6E7682AD2A081CC80051B048 /* PBXTargetDependency */,
 			);
-			name = BrieflyBioAssignmentTests;
+			name = WellPlateOrganizerTests;
 			productName = BrieflyBioAssignmentTests;
-			productReference = 6E7682AB2A081CC80051B048 /* BrieflyBioAssignmentTests.xctest */;
+			productReference = 6E7682AB2A081CC80051B048 /* WellPlateOrganizerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6E7682B42A081CC80051B048 /* BrieflyBioAssignmentUITests */ = {
+		6E7682B42A081CC80051B048 /* WellPlateOrganizerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E7682C52A081CC80051B048 /* Build configuration list for PBXNativeTarget "BrieflyBioAssignmentUITests" */;
+			buildConfigurationList = 6E7682C52A081CC80051B048 /* Build configuration list for PBXNativeTarget "WellPlateOrganizerUITests" */;
 			buildPhases = (
 				6E7682B12A081CC80051B048 /* Sources */,
 				6E7682B22A081CC80051B048 /* Frameworks */,
@@ -178,9 +198,9 @@
 			dependencies = (
 				6E7682B72A081CC80051B048 /* PBXTargetDependency */,
 			);
-			name = BrieflyBioAssignmentUITests;
+			name = WellPlateOrganizerUITests;
 			productName = BrieflyBioAssignmentUITests;
-			productReference = 6E7682B52A081CC80051B048 /* BrieflyBioAssignmentUITests.xctest */;
+			productReference = 6E7682B52A081CC80051B048 /* WellPlateOrganizerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +226,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6E7682962A081CC60051B048 /* Build configuration list for PBXProject "BrieflyBioAssignment" */;
+			buildConfigurationList = 6E7682962A081CC60051B048 /* Build configuration list for PBXProject "WellPlateOrganizer" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +239,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E76829A2A081CC60051B048 /* BrieflyBioAssignment */,
-				6E7682AA2A081CC80051B048 /* BrieflyBioAssignmentTests */,
-				6E7682B42A081CC80051B048 /* BrieflyBioAssignmentUITests */,
+				6E76829A2A081CC60051B048 /* WellPlateOrganizer */,
+				6E7682AA2A081CC80051B048 /* WellPlateOrganizerTests */,
+				6E7682B42A081CC80051B048 /* WellPlateOrganizerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E7682CD2A0822D00051B048 /* plate_layout.csv in Resources */,
 				6E7682A62A081CC80051B048 /* Preview Assets.xcassets in Resources */,
 				6E7682A32A081CC80051B048 /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E7682C92A081E1A0051B048 /* WellModel.swift in Sources */,
+				6E7682CB2A0820170051B048 /* WellView.swift in Sources */,
+				6E7682CF2A0822FB0051B048 /* CSVReader.swift in Sources */,
+				6E7682D12A08371F0051B048 /* ColorExtension.swift in Sources */,
 				6E7682A12A081CC60051B048 /* ContentView.swift in Sources */,
-				6E76829F2A081CC60051B048 /* BrieflyBioAssignmentApp.swift in Sources */,
+				6E7682D32A083F970051B048 /* FilterManager.swift in Sources */,
+				6E76829F2A081CC60051B048 /* WellPlateOrganizerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E7682B02A081CC80051B048 /* BrieflyBioAssignmentTests.swift in Sources */,
+				6E7682B02A081CC80051B048 /* WellPlateOrganizerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +300,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E7682BC2A081CC80051B048 /* BrieflyBioAssignmentUITestsLaunchTests.swift in Sources */,
-				6E7682BA2A081CC80051B048 /* BrieflyBioAssignmentUITests.swift in Sources */,
+				6E7682BC2A081CC80051B048 /* WellPlateOrganizerUITestsLaunchTests.swift in Sources */,
+				6E7682BA2A081CC80051B048 /* WellPlateOrganizerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,12 +310,12 @@
 /* Begin PBXTargetDependency section */
 		6E7682AD2A081CC80051B048 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6E76829A2A081CC60051B048 /* BrieflyBioAssignment */;
+			target = 6E76829A2A081CC60051B048 /* WellPlateOrganizer */;
 			targetProxy = 6E7682AC2A081CC80051B048 /* PBXContainerItemProxy */;
 		};
 		6E7682B72A081CC80051B048 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6E76829A2A081CC60051B048 /* BrieflyBioAssignment */;
+			target = 6E76829A2A081CC60051B048 /* WellPlateOrganizer */;
 			targetProxy = 6E7682B62A081CC80051B048 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -345,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -416,21 +442,21 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BrieflyBioAssignment/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WellPlateOrganizer/Preview Content\"";
 				DEVELOPMENT_TEAM = 9BY392H5L3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = WellPlateOrganizer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.denizkecik.BrieflyBioAssignment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizkecik.WellPlateOrganizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -445,21 +471,21 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BrieflyBioAssignment/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WellPlateOrganizer/Preview Content\"";
 				DEVELOPMENT_TEAM = 9BY392H5L3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = WellPlateOrganizer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.denizkecik.BrieflyBioAssignment;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizkecik.WellPlateOrganizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -478,12 +504,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.denizkecik.BrieflyBioAssignmentTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizkecik.WellPlateOrganizerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrieflyBioAssignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BrieflyBioAssignment";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WellPlateOrganizer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WellPlateOrganizer";
 			};
 			name = Debug;
 		};
@@ -498,12 +524,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.denizkecik.BrieflyBioAssignmentTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizkecik.WellPlateOrganizerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrieflyBioAssignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BrieflyBioAssignment";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WellPlateOrganizer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WellPlateOrganizer";
 			};
 			name = Release;
 		};
@@ -516,12 +542,12 @@
 				DEVELOPMENT_TEAM = 9BY392H5L3;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.denizkecik.BrieflyBioAssignmentUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizkecik.WellPlateOrganizerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BrieflyBioAssignment;
+				TEST_TARGET_NAME = WellPlateOrganizer;
 			};
 			name = Debug;
 		};
@@ -534,19 +560,19 @@
 				DEVELOPMENT_TEAM = 9BY392H5L3;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.denizkecik.BrieflyBioAssignmentUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.denizkecik.WellPlateOrganizerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BrieflyBioAssignment;
+				TEST_TARGET_NAME = WellPlateOrganizer;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6E7682962A081CC60051B048 /* Build configuration list for PBXProject "BrieflyBioAssignment" */ = {
+		6E7682962A081CC60051B048 /* Build configuration list for PBXProject "WellPlateOrganizer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E7682BD2A081CC80051B048 /* Debug */,
@@ -555,7 +581,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E7682BF2A081CC80051B048 /* Build configuration list for PBXNativeTarget "BrieflyBioAssignment" */ = {
+		6E7682BF2A081CC80051B048 /* Build configuration list for PBXNativeTarget "WellPlateOrganizer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E7682C02A081CC80051B048 /* Debug */,
@@ -564,7 +590,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E7682C22A081CC80051B048 /* Build configuration list for PBXNativeTarget "BrieflyBioAssignmentTests" */ = {
+		6E7682C22A081CC80051B048 /* Build configuration list for PBXNativeTarget "WellPlateOrganizerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E7682C32A081CC80051B048 /* Debug */,
@@ -573,7 +599,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E7682C52A081CC80051B048 /* Build configuration list for PBXNativeTarget "BrieflyBioAssignmentUITests" */ = {
+		6E7682C52A081CC80051B048 /* Build configuration list for PBXNativeTarget "WellPlateOrganizerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E7682C62A081CC80051B048 /* Debug */,

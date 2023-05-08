@@ -1,13 +1,13 @@
 //
-//  BrieflyBioAssignmentUITestsLaunchTests.swift
-//  BrieflyBioAssignmentUITests
+//  WellPlateOrganizerUITestsLaunchTests.swift
+//  WellPlateOrganizerUITests
 //
 //  Created by Deniz Kecik on 5/7/23.
 //
 
 import XCTest
 
-final class BrieflyBioAssignmentUITestsLaunchTests: XCTestCase {
+final class WellPlateOrganizerUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

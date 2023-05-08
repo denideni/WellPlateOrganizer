@@ -1,13 +1,13 @@
 //
-//  BrieflyBioAssignmentUITests.swift
-//  BrieflyBioAssignmentUITests
+//  WellPlateOrganizerUITests.swift
+//  WellPlateOrganizerUITests
 //
 //  Created by Deniz Kecik on 5/7/23.
 //
 
 import XCTest
 
-final class BrieflyBioAssignmentUITests: XCTestCase {
+final class WellPlateOrganizerUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
