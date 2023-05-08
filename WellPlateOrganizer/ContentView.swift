@@ -20,6 +20,7 @@ struct ContentView: View {
                 Text("Welcome to Well Plate Organizer!").font(.title3).bold().padding()
                 Text("Get started by importing or opening a file from your device. To open a file from your device press the share button while you are viewing your csv file.")
             } else {
+                Text("Viewing file: \(wellPlateReader.fileName)").padding()
                 Picker("Filter", selection: $activeFilter) {
                     Text("All").tag(Optional<WellTypes>(nil))
                     ForEach(wellPlateReader.allSamples, id: \.description) { item in

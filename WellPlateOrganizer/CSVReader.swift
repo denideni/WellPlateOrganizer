@@ -10,6 +10,7 @@ import Foundation
 class CSVReader: ObservableObject {
     @Published var wellPlate: [[WellModel]] = []
     @Published var allSamples: [WellTypes] = []
+    @Published var fileName: String = ""
     private var rows: [String] = []
     
     func clearPlates() {
@@ -18,6 +19,7 @@ class CSVReader: ObservableObject {
     }
     
     func readFromURL(filePath: URL) {
+        fileName = String(filePath.absoluteString.split(separator: "/").last ?? "")
         var data = ""
         do {
             let fileData = try Data(contentsOf: filePath)
@@ -38,6 +40,7 @@ class CSVReader: ObservableObject {
     }
     
     func readFromPath(filePath: String) {
+        fileName = String(filePath.split(separator: "/").last ?? "")
         var data = ""
         do {
             data = try String(contentsOfFile: filePath)
